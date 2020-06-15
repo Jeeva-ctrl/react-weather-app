@@ -4,13 +4,13 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 const Nav = (props) => {
   let nav = null;
 
-  if (props.locat == "/") {
+  if (props.locat == "/react-weather-app/") {
     nav = <div className="nav_text">Search</div>;
   } else if (props.locat == "/current") {
     nav = (
       <div>
         {" "}
-        <Link to="/" className="nav_text">
+        <Link to="react-weather-app/" className="nav_text">
           {" "}
           <img src={require(`../assets/left.svg`)} />
           <span>Search</span>

@@ -46,7 +46,7 @@ export const FetchCurrentWeather = (city, callBack) => (dispatch) => {
   return fetch(
     "https://api.openweathermap.org/data/2.5/weather/?q=" +
       `${city}` +
-      "&units=metric&APPID=228da76e44f9717610a32c6238889a35"
+      "&units=metric&APPID=xxxxx"
   )
     .then((response) => handleResponse(response))
     .then((weather) => mapDataToWeatherInterface(weather))
@@ -66,7 +66,7 @@ export const FetchForecastWeather = (city, callBack) => (dispatch) => {
   return fetch(
     "https://api.openweathermap.org/data/2.5/forecast/?q=" +
       `${city}` +
-      "&units=metric&APPID=228da76e44f9717610a32c6238889a35"
+      "&units=metric&APPID=xxx"
   )
     .then((response) => handleResponse(response))
     .then((result) => {

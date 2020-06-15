@@ -13,7 +13,7 @@ class WeatherContainer extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      city: "Rhodes",
+      city: "",
       current: null,
       foreCast: [],
       isLoading: false,
@@ -67,7 +67,7 @@ class WeatherContainer extends Component {
             />
           )}
         </Route>
-        <Route exact path="/">
+        <Route exact path="/react-weather-app/">
           <SearchView
             value={this.state.city}
             onButtonClick={handleButtonClick}
